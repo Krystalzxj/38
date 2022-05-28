@@ -41,7 +41,7 @@ let args = getArgs();
   
   let content = [`𝑼𝒔𝒆:${bytesToSize(used)} | 𝑻𝒐𝒕𝒂𝒍 𝒄𝒂𝒑𝒂𝒄𝒊𝒕𝒚:${bytesToSize(total)}`];
   if (resetDayLeft) {
-    content.push(`𝑩𝒆𝒍𝒆𝒇𝒕:${bytesToSize(total-used)} | 𝑹𝒆𝒑𝒍𝒂𝒄𝒆:𝑩𝒆𝒍𝒆𝒇𝒕 ${resetDayLeft}天`);
+    content.push(`𝑩𝒆𝒍𝒆𝒇𝒕:${bytesToSize(total-used)} | 𝑹𝒆𝒑𝒍𝒂𝒄𝒆: 🎯 ${resetDayLeft}天`);
   }
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
